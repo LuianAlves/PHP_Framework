@@ -1,0 +1,11 @@
+<h1>Sobre Nós</h1>
+<hr />
+
+        <!-- Utilizando o ' $this-$view-> ' a partir do Objeto Vazio que atribuir o valor de $dados ao atributo $view no Controller -->
+ <?php foreach($this->view->dados as $indice => $info) { // Herdando o array $dados de IndexController ?>
+    
+    <h1> <?= $info['titulo'] ?> </h1>
+    <br>
+    <p> <?= $info['descricao'] ?></p>
+
+ <?php } ?>

@@ -1,0 +1,10 @@
+<h1>Index</h1>
+<hr />
+
+<?php
+    // Utilizando o ' $this-$view-> ' a partir do Objeto Vazio que atribuir o valor de $dados ao atributo $view no Controller
+    foreach($this->view->dados as $indice => $produto) { // Herdando o array $dados de IndexController
+        echo $produto['id'] . ' - ' .$produto['descricao'] . ' - ' . $produto['preco'];
+        echo '<br>';
+    }
+?>
